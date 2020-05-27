@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root {
+  --Green: #1ebba3;
+}
+
 
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   color: #505962;
+}
+
+.offset::before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
 }
 
 /* Navigation */
@@ -17,6 +28,7 @@ body {
 
 .navbar-brand {
   height: 3rem;
+  font-size: 1.8rem;
 }
 
 .navbar-nav li {
@@ -30,7 +42,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1ebba3;
+  color: var(--Green);
 }
 
 /* Landing Page */
@@ -68,11 +80,97 @@ body {
   padding: .6rem 1.3rem;
   font-size: 1.1rem;
 }
+/* COURSE SECTION */
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+.narrow h1 {
+  font-size: 2.4rem;
+}
+
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: var(--Green);
+  border-color: var(--Green);
+}
+
+.btn-secondary:hover {
+  background-color: #189582;
+  border-color: #189582;
+}
+
+/*Feature Section*/
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem; 
+}
+
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: var(--Green);
+  margin: 0 auto 2rem;
+}
+
+.feature .svg-inline {
+  color: var(--Green);
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+
+.feature p {
+  font-size: 1.1rem;
+}
+
+/*Resources*/
+.fixed {
+  background-image: url(./img/apple.png);
+  z-index: -1;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 7rem 2rem;
+}
+
+.fixed-background h3 {
+  margin-bottom: 2rem;
+}
+
+.fixed-background p {
+  margin-top: 1.5rem;
+}
+
+/*Client Section*/
 
 
 
 
-/*============= COURSE SECTION =============*/
+
+
+
 
 /*============ BOOTSTRAP BREAK POINTS:
 
