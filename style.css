@@ -3,6 +3,9 @@
   --Green: #1ebba3;
 }
 
+.svg-inline {
+  color: var(--Green);
+}
 
 body {
   overflow-x: hidden;
@@ -129,10 +132,6 @@ h3.heading {
   margin: 0 auto 2rem;
 }
 
-.feature .svg-inline {
-  color: var(--Green);
-}
-
 .feature h3 {
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -164,11 +163,46 @@ h3.heading {
 }
 
 /*Client Section*/
+.clients img {
+  width: 100%;
+  border-radius: 50%;
+}
 
+blockquote .svg-inline {
+  margin: 1rem;
+}
 
+.clients-hr {
+  border-top: .05rem solid var(--Green);
+}
 
+/*Contact Section*/
+footer {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #fff;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
 
+footer .brand-name {
+  height: 3rem;
+  font-size: 3rem;
+  color: blanchedalmond;
+  text-decoration: none;
+  margin: 1.5rem 0;
+}
 
+footer .brand-name:hover {
+  text-decoration: none;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: var(--Green);
+}
 
 
 
